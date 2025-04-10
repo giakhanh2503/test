@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUỘC THI NHÀ SỬ HỌC NHỎ TUỔI</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('../test/2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.85);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header {
+            padding: 30px 0;
+        }
+        
+        h1 {
+            color: #e60000;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #e60000, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        
+        .event-info {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .event-info h2 {
+            color: #e60000;
+            margin-top: 0;
+        }
+        
+        .grade-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .grade-btn {
+            background: linear-gradient(135deg, #e60000, #ff6600);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .grade-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ff6600, #e60000);
+        }
+        
+        .grade-btn:active {
+            transform: translateY(0);
+        }
+        
+        .history-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .history-content h2 {
+            color: #e60000;
+            text-align: center;
+        }
+        
+        .history-image {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(233, 30, 30, 0.8);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .grade-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <header>
+                <h1>CUỘC THI NHÀ SỬ HỌC NHỎ TUỔI</h1>
+                <div class="subtitle">Kỷ niệm Ngày Giải phóng miền Nam, thống nhất đất nước 30/4/1975</div>
+                <img src="../test/1.jpg" alt="Banner 30/4" class="fixed-banner">
+            </header>
+            
+            <div class="event-info">
+                <h2>THỂ LỆ CUỘC THI</h2>
+                <p>Cuộc thi dành cho các em học sinh tiểu học,
+                    <p></p>giúp các em tìm hiểu về lịch sử hào hùng của dân tộc, đặc biệt là sự kiện Giải phóng miền Nam 30/4/1975.</p>
+                <p>Các em hãy chọn khối lớp của mình để tham gia phần thi trắc nghiệm thú vị!</p>
+            </div>
+            
+            <div class="grade-buttons">
+                <a href="https://forms.gle/EXAMPLE1" class="grade-btn" target="_blank">KHỐI 1, 2, 3</a>
+                <a href="https://forms.gle/EXAMPLE2" class="grade-btn" target="_blank">KHỐI 4, 5</a>
+            </div>
+            
+            <div class="history-content">
+                <h2>Ý NGHĨA NGÀY 30/4</h2>
+                <img src="../test/1.jpg" alt="30/4 lịch sử" class="history-image">
+                <p>Ngày 30 tháng 4 năm 1975 là ngày chiến dịch Hồ Chí Minh toàn thắng, giải phóng hoàn toàn miền Nam, thống nhất đất nước. Đây là một trong những mốc son chói lọi nhất trong lịch sử dân tộc Việt Nam.</p>
+                <p>Sự kiện này đã chấm dứt hơn 100 năm đấu tranh giành độc lập dân tộc, đưa non sông thu về một mối, mở ra kỷ nguyên mới - kỷ nguyên độc lập, tự do và thống nhất của Tổ quốc.</p>
+                <p>Cuộc thi "Nhà sử học nhỏ tuổi" giúp các em học sinh hiểu rõ hơn về ý nghĩa lịch sử của ngày 30/4, từ đó thêm tự hào về truyền thống yêu nước của dân tộc.</p>
+            </div>
+            
+            <footer>
+                <p>Trường Tiểu học [Tên trường] - Kỷ niệm 50 năm Ngày Giải phóng miền Nam (30/4/1975 - 30/4/2025)</p>
+                <p>Mọi thắc mắc xin liên hệ: [Email/SĐT liên hệ]</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
